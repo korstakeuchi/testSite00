@@ -144,8 +144,10 @@ img{
 }
 
 .grid{
-    display: grid;
-    gap: 1.5rem;
+    /* A class inside the unordered lists */
+    
+    display: grid; /*  */
+    gap: 1.5rem; /*  */
 }
 
 .header{
@@ -161,9 +163,9 @@ img{
 .nav{
     max-width: 968px;
     height: var(--header-height);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /*  */
+    justify-content: space-between; /*  */
+    align-items: center; /*  */
 }
 
 .nav__logo,
@@ -178,7 +180,7 @@ img{
 
 .nav__toggle{
     font-size: 1.1rem;
-    cursor: pointer;
+    cursor: pointer; /*  */
 }
 .nav__toggle:hover{
     color: var(--first-color);
@@ -187,13 +189,61 @@ img{
 @media screen and (max-width: 767px){
     .nav__menu{
         position: fixed;
-        bottom: 0;
+        bottom: -100%; /* default is 0 when showing (main.js) */
         left: 0;
         width: 100%;
         background-color: var(--body-color);
         padding: 2rem 1.5rem 4rem;
-        box-shadow: 0 -1px 4px rgba(0,0,0,.15);
-        border-radius: 1.5rem 1.5rem 0 0;
-        transition: .3s;
+        box-shadow: 0 -1px 4px rgba(0,0,0,.15); /*  */
+        border-radius: 1.5rem 1.5rem 0 0; /*  */
+        transition: .3s; /*  */
     }
+}
+
+.nav__list{
+    /* A class inside the unordered lists */
+    
+    grid-template-columns: repeat(3, 1fr); /*  */
+    gap: 2rem; /*  */
+}
+
+.nav__link{
+    /* For links inside the unordered lists */
+
+    display: flex; /*  */
+    flex-direction: column; /*  */
+    align-items: center; /*  */
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+.nav__link:hover{
+    color: var(--first-color);
+}
+
+.nav__icon{
+    /* To increase icon size in <i class=""></i> */
+    
+    font-size: 1.2rem;
+}
+
+.nav__close{
+    /* Put the X on the bottom right side */
+    
+    position: absolute; /*  */
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--first-color);
+}
+.nav__close:hover{
+    color: var(--first-color-alt);
+}
+
+
+
+/* Show menu | Linked to main.js */
+.show-menu{
+    bottom: 0;
 }
