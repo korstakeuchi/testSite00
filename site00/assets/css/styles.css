@@ -74,7 +74,7 @@
 
 
 
-/* BASE */
+/* ==================== BASE ==================== */
 /* Reset html */
 *{
     box-sizing: border-box;
@@ -329,7 +329,7 @@ img{
 
 
 .home__scroll{
-    /* display: none; */
+    display: none;
 
     /* Hides the Scroll down button */
 }
@@ -352,6 +352,10 @@ img{
 .home__scroll-arrow{
     font-size: 1.25rem;
 }
+
+
+
+
 
 /* ==================== BUTTONS ==================== */
 .button{
@@ -386,3 +390,60 @@ img{
     without the inline-flex along with the movement
     relative to the home__scroll-button:hover above. */
 }
+
+
+
+
+
+/* ==================== ABOUT ==================== */
+.about__img{
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center; /* */
+    align-self: center;
+
+    /* Decreasing about me image with some border radius and centering */
+}
+
+
+.about__description{
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+
+
+.about__info{
+    display: flex; /* */
+    justify-content: space-evenly; /* */
+    margin-bottom: var(--mb-2-5);
+}
+.about__info-title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+.about__info-name{
+    font-size: var(--small-font-size);
+}
+.about__info-title,
+.about__info-name{
+    display: block;
+    text-align: center;
+
+    /* Makes the whole about__info more decent looking. */
+}
+
+
+.about__buttons{
+    display: flex; /* */
+    justify-content: center; /* */
+
+    /* Centers the Download CV button. */
+}
+
+
+
+
+
+/* ==================== SKILLS ==================== */
