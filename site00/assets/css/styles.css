@@ -136,6 +136,10 @@ img{
     text-align: center;
 }
 
+
+
+
+
 /* ==================== LAYOUT ==================== */
 .container{
     max-width: 768px;
@@ -266,6 +270,7 @@ img{
     grid-template-columns: .5fr 3fr; /* */
     padding-top: 3.5rem; /* */
     align-items: center; /* */
+
     /* For some reason this puts all of the content
     and home__data to the left side */
 }
@@ -275,6 +280,7 @@ img{
     display: grid; /* */
     grid-template-columns: max-content; /* */
     row-gap: 1rem; /* */
+
     /* Turns the home__socials vertically */
 }
 
@@ -294,6 +300,7 @@ img{
 }
 .home__blob-img{
     width: 190px;
+
     /* If you want to chang the position,
     you have to do it beside the class="home__blob-img"
     x = ... y = ... */
@@ -322,7 +329,7 @@ img{
 
 
 .home__scroll{
-    display: none;
+    /* display: none; */
 
     /* Hides the Scroll down button */
 }
