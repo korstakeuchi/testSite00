@@ -447,3 +447,151 @@ img{
 
 
 /* ==================== SKILLS ==================== */
+.skills__container{
+    row-gap: 0; /* */
+
+    /* Probably creates a gap in the row */
+}
+
+
+.skills__header{
+    display: flex; /* */
+    align-items: center; /* */
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+
+    /* Arranges the skills header horizontally */
+}
+
+
+.skills__icon,
+.skills__arrow{
+    font-size: 2rem;
+    color: var(--first-color);
+
+    /* Increases the icon size of the skills__header
+    and its color */
+}
+.skills__icon{
+    margin-right: var(--mb-0-75);
+}
+
+
+.skills__title{
+    font-size: var(--h3-font-size);
+}
+.skills__subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+
+    /* Makes the skills__title and subtitle
+    smaller */
+}
+
+
+.skills__arrow{
+    margin-left: auto;
+    transition: .4s;
+
+    /* Puts the arrow to the right side */
+}
+
+
+.skills__list{
+    row-gap: 1.5rem; /* */
+    padding-left: 2.7rem;
+
+    /* I don't really understand what this does */
+}
+.skills__titles{
+    display: flex; /* */
+    justify-content: space-between; /* */
+    margin-bottom: var(--mb-0-5);
+
+    /* Makes the skills__title(s) smaller or bigger I think
+    and puts the percentage on the right side. */
+}
+.skills__name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+.skills__bar,
+.skills__percentage{
+    height: 5px;
+    border-radius: .25rem;
+
+    /* Gives space for the bars to be
+    filled with background color to create a sense of 
+    a progress bar. */
+}
+.skills__bar{
+    background-color: var(--first-color-lighter);
+
+    /* Treated as the overall amount of a skill */
+}
+.skills__percentage{
+    display: block; /* I don't know why this has to be a block */
+    background-color: var(--first-color);
+
+    /* Treated as the actual amount of
+    number that a skills has compared to
+    the skills bar. */
+}
+/* The skills__percentage and skills__html/css/js/etc
+are one and the same.
+Percentage is treated as the background color or fill and
+the other is treated as the total amount. */
+.skills__html{
+    width: 90%;
+}
+.skills__css{
+    width: 80%;
+}
+.skills__js{
+    width: 60%;
+}
+.skills__react{
+    width: 85%;
+}
+
+.skills__php{
+    width: 80%;
+}
+.skills__node{
+    width: 70%;
+}
+.skills__firebase{
+    width: 90%;
+}
+.skills__python{
+    width: 55%;
+}
+
+.skills__figma{
+    width: 90%;
+}
+.skills__sketch{
+    width: 85%;
+}
+.skills__photoshop{
+    width: 85%;
+}
+
+
+.skills__close .skills__list{
+    height: 0;
+    overflow: hidden;
+}
+.skills__open .skills__list{
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+
+    /* Hides some skills while adding 
+    some margin to the open skills */
+}
+.skills__open .skills__arrow{
+    transform: rotate(-180deg);
+
+    /* Turns the arrow upside-down when 
+    skill is open */
+}
